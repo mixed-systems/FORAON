@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyOriginatorKeyFile>..\etc\Mixed.snk</AssemblyOriginatorKeyFile>
+    <Configurations>debug;release</Configurations>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>CS0219;CS0162;</NoWarn>
+    <Nullable>enable</Nullable>
+    <OutputPath>..\bin\</OutputPath>
+    <OutputType>Exe</OutputType>
+    <PostSharpDisabledMessages>PS0131;</PostSharpDisabledMessages>
+    <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    <RootNamespace>FORAON</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFramework>net6.0</TargetFramework>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Definitions\Definitions.csproj" />
+  </ItemGroup>
+
+</Project>

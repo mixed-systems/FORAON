@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyOriginatorKeyFile>..\etc\Mixed.snk</AssemblyOriginatorKeyFile>
+    <Configurations>debug;release</Configurations>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>IDE1006;</NoWarn>
+    <Nullable>enable</Nullable>
+    <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    <RootNamespace>Definitions</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFramework>net6.0</TargetFramework>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Accent.Runtime.cs">
+      <DependentUpon>Accent.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Board.Runtime.cs">
+      <DependentUpon>Board.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Contract.Runtime.cs">
+      <DependentUpon>Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Primitive.Runtime.cs">
+      <DependentUpon>Primitive.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Sentience.Runtime.cs">
+      <DependentUpon>Sentience.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PostSharp" Version="6.10.10" />
+  </ItemGroup>
+
+</Project>

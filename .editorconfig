@@ -1,0 +1,35 @@
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+# All files
+[*]
+indent_style = space
+
+# 2-indent
+[*.{csproj, json}]
+indent_size = 2
+
+# Code files
+[*.{cs}]
+indent_size = 4
+insert_final_newline = true
+charset = utf-8-bom
+
+[*.{cs}]
+
+#namespace,class,struct,interface,enum,property,method,field,event,delegate,parameter,type_parameter,local,local_function
+#public,internal,private,protected,protected_internal,private_protected,local
+
+# Defining the 'main' symbol group
+dotnet_naming_symbols.main.applicable_kinds             = class,struct,interface,enum,property,method,field,event,delegate,type_parameter
+dotnet_naming_symbols.main.applicable_accessibilities   = public,internal,private,protected,protected_internal,private_protected
+
+# Define the 'mixed' naming style
+dotnet_naming_style.mixed.capitalization = pascal_case
+
+# Define the 'main_mixed' naming rule
+dotnet_naming_rule.main_mixed.symbols = main
+dotnet_naming_rule.main_mixed.style = mixed
+dotnet_naming_rule.main_mixed.severity = warning
