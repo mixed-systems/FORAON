@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shell", "Shell\Shell.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "etc", "etc", "{86E63E0E-B37F-4B20-B584-E889EF0E9474}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Writer", "Writer\Writer.csproj", "{F43313A4-CB7A-44F1-A1D8-38532EE0CA17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		debug|Any CPU = debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{8214A781-437E-4FB0-A021-E9EAF055CD76}.debug|Any CPU.Build.0 = debug|Any CPU
 		{8214A781-437E-4FB0-A021-E9EAF055CD76}.release|Any CPU.ActiveCfg = release|Any CPU
 		{8214A781-437E-4FB0-A021-E9EAF055CD76}.release|Any CPU.Build.0 = release|Any CPU
+		{F43313A4-CB7A-44F1-A1D8-38532EE0CA17}.debug|Any CPU.ActiveCfg = debug|Any CPU
+		{F43313A4-CB7A-44F1-A1D8-38532EE0CA17}.debug|Any CPU.Build.0 = debug|Any CPU
+		{F43313A4-CB7A-44F1-A1D8-38532EE0CA17}.release|Any CPU.ActiveCfg = release|Any CPU
+		{F43313A4-CB7A-44F1-A1D8-38532EE0CA17}.release|Any CPU.Build.0 = release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

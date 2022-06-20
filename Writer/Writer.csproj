@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyOriginatorKeyFile>..\etc\Mixed.snk</AssemblyOriginatorKeyFile>
+    <Configurations>debug;release</Configurations>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>IDE1006;</NoWarn>
+    <Nullable>enable</Nullable>
+    <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    <RootNamespace>Writer</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFramework>net6.0</TargetFramework>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kw.Common" Version="2.1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Definitions\Definitions.csproj" />
+  </ItemGroup>
+
+</Project>
